@@ -1,6 +1,5 @@
 # springboot-reactjs
 
-## installation
 	npx create-react-app my-app - this will create new project name my-app
 	npm start -> To start server.
   
