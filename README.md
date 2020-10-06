@@ -1,7 +1,7 @@
 # springboot-reactjs
 
 ## installation
-- Node is installed 
-- **npx create-react-app my-app**
-- To start server: **npm start**
+	npx create-react-app my-app - this will create new project name my-app
+	npm start -> To start server.
+  
 - [quick installation click here](https://github.com/facebook/create-react-app)
