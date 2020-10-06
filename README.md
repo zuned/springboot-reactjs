@@ -20,3 +20,5 @@
 	);
 	
 In the above code the app component is replaced at element have id root.
+
+**JSX**
