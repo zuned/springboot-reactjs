@@ -4,3 +4,11 @@
 	npm start -> To start server.
   
 - [quick installation click here](https://github.com/facebook/create-react-app)
+
+**Folder Structure**
+
+	package.json --> is similar to pom file
+	node-module  --> where all library is stored
+	src --> will contain all the react code
+	public --> contians index.html
+
