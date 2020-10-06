@@ -12,3 +12,11 @@
 	src --> will contain all the react code
 	public --> contians index.html
 
+	ReactDOM.render(
+	  <React.StrictMode>
+	    <App />
+	  </React.StrictMode>,
+	  document.getElementById('root')
+	);
+	
+In the above code the app component is replaced at element have id root.
