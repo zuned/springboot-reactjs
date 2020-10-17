@@ -24,3 +24,7 @@ In the above code the app component is replaced at element have id root.
 **JSX**
 **Class Components**
 **Function Components**
+
+- To add router dependency
+
+	**npm add react-router-dom**
