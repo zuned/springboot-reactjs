@@ -37,5 +37,6 @@ In the above code the app component is replaced at element have id root.
 	
 	for adding run command> npm add axios
 	
+- **[AXIOS](https://github.com/axios/axios)** uses **[PROMISE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** For Eventful completion of asynchronous application.
 
-	
+
