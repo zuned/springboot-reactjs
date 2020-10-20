@@ -47,3 +47,7 @@ In the above code the app component is replaced at element have id root.
 	4. **componentWillUnmount()** This is called on unload of component
 	5. **shouldComponentUpdate(nextProps,nextState)** This method return true or false , It is called before caling render() method , if method return false render method is not called 
 
+- For Form Validation please install 
+ **Formik** npm add formik
+ **moment** npm install moment
+ 
