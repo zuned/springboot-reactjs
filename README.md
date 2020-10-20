@@ -41,8 +41,9 @@ In the above code the app component is replaced at element have id root.
 
 - **Component** Life Cycle Methods 
 
-	**constructor()** This is first method called
-	**render()** This will build the view of the component called after constructor()
-	**componentDidMount()** This called after component loaded contructor() ->then -> render() -> then -> componentDidMount() 
-	
+	1. **constructor()** This is first method called
+	2. **render()** This will build the view of the component called after constructor()
+	3. **componentDidMount()** This called after component loaded contructor() ->then -> render() -> then -> componentDidMount() 
+	4. **componentWillUnmount()**
+	5. **shouldComponentUpdate(nextProps,nextState)**
 
