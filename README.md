@@ -43,7 +43,7 @@ In the above code the app component is replaced at element have id root.
 
 	1. **constructor()** This is first method called
 	2. **render()** This will build the view of the component called after constructor()
-	3. **componentDidMount()** This called after component loaded contructor() ->then -> render() -> then -> componentDidMount() 
-	4. **componentWillUnmount()**
-	5. **shouldComponentUpdate(nextProps,nextState)**
+	3. **componentDidMount()** This called after component loaded contructor() -> render() ->componentDidMount() ->render()
+	4. **componentWillUnmount()** This is called on unload of component
+	5. **shouldComponentUpdate(nextProps,nextState)** This method return true or false , It is called before caling render() method , if method return false render method is not called 
 
