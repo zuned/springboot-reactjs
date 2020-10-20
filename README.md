@@ -39,4 +39,8 @@ In the above code the app component is replaced at element have id root.
 	
 - **[AXIOS](https://github.com/axios/axios)** uses **[PROMISE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** For Eventful completion of asynchronous application.
 
+- **Component** Life Cycle Methods 
 
+**constructor()** This is first method called
+**render()** This will build the view of the component called after constructor()
+**componentDidMount()** This called after component loaded contructor() ->then -> render() -> then -> componentDidMount() 
