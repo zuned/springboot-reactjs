@@ -25,17 +25,14 @@ In the above code the app component is replaced at element have id root.
 **Class Components**
 **Function Components**
 
-- To add router dependency
-
-	**npm add react-router-dom**
+- To add router dependency `**npm add react-router-dom**`
 - For changing default port of react application, we need to edit the pakage.json
-
-	for window > "start" : "SET PORT=4200 react-scripts start"
-	for mac > "start" : "PORT=4200 react-scripts start"
+	for window > `"start" : "SET PORT=4200 react-scripts start"`
+	for mac > `"start" : "PORT=4200 react-scripts start"`
 	
 - For resetful service integeration we can use [AXIOS](https://github.com/axios/axios)
 	
-	for adding run command> npm add axios
+	for adding run command> `npm add axios`
 	
 - **[AXIOS](https://github.com/axios/axios)** uses **[PROMISE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** For Eventful completion of asynchronous application.
 
