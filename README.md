@@ -25,7 +25,7 @@ In the above code the app component is replaced at element have id root.
 **Class Components**
 **Function Components**
 
-- To add router dependency `**npm add react-router-dom**`
+- To add router dependency `npm add react-router-dom`
 - For changing default port of react application, we need to edit the pakage.json
 	for window > `"start" : "SET PORT=4200 react-scripts start"`
 	for mac > `"start" : "PORT=4200 react-scripts start"`
