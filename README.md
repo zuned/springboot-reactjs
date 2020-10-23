@@ -25,6 +25,27 @@ In the above code the app component is replaced at element have id root.
 **Class Components**
 **Function Components**
 
-- To add router dependency
+- To add router dependency `npm add react-router-dom`
+- For changing default port of react application, we need to edit the pakage.json
+	for window > `"start" : "SET PORT=4200 react-scripts start"`
+	for mac > `"start" : "PORT=4200 react-scripts start"`
+	
+- For resetful service integeration we can use [AXIOS](https://github.com/axios/axios)
+	
+	for adding run command> `npm add axios`
+	
+- **[AXIOS](https://github.com/axios/axios)** uses **[PROMISE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)** For Eventful completion of asynchronous application.
 
-	**npm add react-router-dom**
+- **Component** Life Cycle Methods 
+
+	1. **constructor()** This is first method called
+	2. **render()** This will build the view of the component called after constructor()
+	3. **componentDidMount()** This called after component loaded contructor() -> render() ->componentDidMount() ->render()
+	4. **componentWillUnmount()** This is called on unload of component
+	5. **shouldComponentUpdate(nextProps,nextState)** This method return true or false , It is called before caling render() method , if method return false render method is not called 
+
+- For Form Validation please install and for date fomatting other use moment
+
+ **Formik** `npm add formik`
+ **moment** `npm install moment`
+ 
