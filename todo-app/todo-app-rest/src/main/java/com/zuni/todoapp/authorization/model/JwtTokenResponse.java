@@ -1,4 +1,4 @@
-package com.zuni.todoapp.config.security.jwt.resource;
+package com.zuni.todoapp.authorization.model;
 
 import java.io.Serializable;
 

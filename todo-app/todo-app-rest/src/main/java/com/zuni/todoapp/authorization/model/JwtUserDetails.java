@@ -1,4 +1,4 @@
-package com.zuni.todoapp.config.security.jwt;
+package com.zuni.todoapp.authorization.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;

@@ -1,4 +1,4 @@
-package com.zuni.todoapp.config.security.jwt;
+package com.zuni.todoapp.authorization.config.jwt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,17 +22,25 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class JWTWebSecurityConfig extends WebSecurityConfigurerAdapter {
-    @Autowired
-    private JwtUnAuthorizedResponseAuthenticationEntryPoint jwtUnAuthorizedResponseAuthenticationEntryPoint;
-
-    @Autowired
-    private UserDetailsService jwtInMemoryUserDetailsService;
-
-    @Autowired
-    private JwtTokenAuthorizationOncePerRequestFilter jwtAuthenticationTokenFilter;
 
     @Value("${jwt.get.token.uri}")
     private String authenticationPath;
+    @Autowired
+    private JwtUnAuthorizedResponseAuthenticationEntryPoint jwtUnAuthorizedResponseAuthenticationEntryPoint;
+    @Autowired
+    private UserDetailsService jwtInMemoryUserDetailsService;
+    @Autowired
+    private JwtTokenAuthorizationOncePerRequestFilter jwtAuthenticationTokenFilter;
+
+
+//    public JWTWebSecurityConfig(
+//            JwtUnAuthorizedResponseAuthenticationEntryPoint jwtUnAuthorizedResponseAuthenticationEntryPoint,
+//            UserDetailsService jwtInMemoryUserDetailsService, JwtTokenAuthorizationOncePerRequestFilter jwtAuthenticationTokenFilter
+//    ) {
+//        this.jwtUnAuthorizedResponseAuthenticationEntryPoint = jwtUnAuthorizedResponseAuthenticationEntryPoint;
+//        this.jwtInMemoryUserDetailsService = jwtInMemoryUserDetailsService;
+//        this.jwtAuthenticationTokenFilter = jwtAuthenticationTokenFilter;
+//    }
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {

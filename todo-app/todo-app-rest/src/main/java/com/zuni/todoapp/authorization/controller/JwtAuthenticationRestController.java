@@ -1,7 +1,10 @@
-package com.zuni.todoapp.config.security.jwt.resource;
+package com.zuni.todoapp.authorization.controller;
 
-import com.zuni.todoapp.config.security.jwt.JwtTokenUtil;
-import com.zuni.todoapp.config.security.jwt.JwtUserDetails;
+import com.zuni.todoapp.authorization.util.JwtTokenUtil;
+import com.zuni.todoapp.authorization.exception.AuthenticationException;
+import com.zuni.todoapp.authorization.model.JwtTokenRequest;
+import com.zuni.todoapp.authorization.model.JwtTokenResponse;
+import com.zuni.todoapp.authorization.model.JwtUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;

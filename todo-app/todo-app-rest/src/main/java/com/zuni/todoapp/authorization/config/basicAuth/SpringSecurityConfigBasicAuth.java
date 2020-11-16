@@ -1,4 +1,4 @@
-package com.zuni.todoapp.config.security.basicAuth;
+package com.zuni.todoapp.authorization.config.basicAuth;
 
 //@Configuration
 //@EnableWebSecurity

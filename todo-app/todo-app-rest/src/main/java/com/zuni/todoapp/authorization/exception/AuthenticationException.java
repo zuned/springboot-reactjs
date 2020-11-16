@@ -1,4 +1,4 @@
-package com.zuni.todoapp.config.security.jwt.resource;
+package com.zuni.todoapp.authorization.exception;
 
 public class AuthenticationException extends RuntimeException {
     public AuthenticationException(String message, Throwable cause) {

@@ -1,5 +1,6 @@
-package com.zuni.todoapp.config.security.jwt;
+package com.zuni.todoapp.authorization.config.jwt;
 
+import com.zuni.todoapp.authorization.util.JwtTokenUtil;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

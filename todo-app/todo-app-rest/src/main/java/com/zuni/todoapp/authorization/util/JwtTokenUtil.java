@@ -1,5 +1,6 @@
-package com.zuni.todoapp.config.security.jwt;
+package com.zuni.todoapp.authorization.util;
 
+import com.zuni.todoapp.authorization.model.JwtUserDetails;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Clock;
 import io.jsonwebtoken.Jwts;
