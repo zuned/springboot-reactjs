@@ -1,7 +1,7 @@
 package com.zuni.todoapp.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,8 +9,8 @@ import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Entity
-@Data
-@AllArgsConstructor
+@Getter
+@Setter
 public class Todo {
     @Id
     @GeneratedValue

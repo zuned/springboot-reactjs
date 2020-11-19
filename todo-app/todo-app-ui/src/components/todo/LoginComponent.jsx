@@ -23,18 +23,41 @@ class LoginComponent extends Component {
 
     loginClick() {
         console.log(this.state);
-        if(this.state.username === 'zuned' && this.state.password === 'ahmed'){
-            AuthenticationService.onLoginSuccess(this.state.username);
-            // this.setState({showSuccessMessage : true ,hasLoginFailed : false });
-            this.props.history.push(`/welcome/${this.state.username}`);
-        }else {
-            this.setState({showSuccessMessage : false ,hasLoginFailed : true});
-        }
+        // if(this.state.username === 'zuned' && this.state.password === 'ahmed'){
+        //     AuthenticationService.onLoginSuccess(this.state.username);
+        //     // this.setState({showSuccessMessage : true ,hasLoginFailed : false });
+        //     this.props.history.push(`/welcome/${this.state.username}`);
+        // }else {
+        //     this.setState({showSuccessMessage : false ,hasLoginFailed : true});
+        // }
+
+        // AuthenticationService.executeBasicAuthenticationService(this.state.username, this.state.password)
+        // .then(()=> {
+        //     AuthenticationService.onLoginSuccess(this.state.username,this.state.password)
+        //     this.props.history.push(`/welcome/${this.state.username}`)
+        // })
+        // .catch( () =>{
+        //     this.setState({showSuccessMessage:false})
+        //     this.setState({hasLoginFailed:true})
+        // })
+
+        AuthenticationService
+        .executeJwtAuthenticationService(this.state.username, this.state.password)
+        .then((response) => {
+            AuthenticationService.registerSuccessfulLoginForJwt(this.state.username, response.data.token)
+            this.props.history.push(`/welcome/${this.state.username}`)
+        }).catch(() => {
+            this.setState({ showSuccessMessage: false })
+            this.setState({ hasLoginFailed: true })
+        })
+
+
     }
    
  render() {
      return (
          <div className="container">
+             <h1>Login</h1>
             {/*<ShowInvalidMessage hasLoginFailed={this.state.hasLoginFailed} /> */}
             {this.state.hasLoginFailed&&<div className="alert alert-warning">Invalid Credentials.</div>}
             {/*<ShowSuccessMessage showSuccessMessage={this.state.showSuccessMessage} />*/}
