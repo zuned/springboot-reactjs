@@ -2,6 +2,11 @@
 
 	npx create-react-app my-app - this will create new project name my-app
 	npm start -> To start server.
+	
+	Following steps followed when getting Error -> deleted folder C:\Users\<<USER-NAME>>\AppData\Local\npm-cache
+	Then again to npx commad see what error message come. It will update you about version it is expecting and command that you need to run.
+	
+	Run the command to upgrade npm and then try again
   
 - [quick installation click here](https://github.com/facebook/create-react-app)
 
